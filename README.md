@@ -65,9 +65,9 @@ ls /usr/share/nmap/scripts
 ### FTP
 Check for Anonymous login allowed
 ```
-ftp `Target IP`
+ftp open `Target IP`
 ```
-> ftp `Target IP` \\ Username: anonymous ; password sembarang 
+> Username: anonymous ; password sembarang
 ### SMB
 
 
