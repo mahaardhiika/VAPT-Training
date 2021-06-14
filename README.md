@@ -65,19 +65,75 @@ ls /usr/share/nmap/scripts
 ### FTP
 Check for Anonymous login allowed
 ```
-ftp open `Target IP`
+ftp open Target_IP
 ```
 > Username: anonymous ; password sembarang
-### SMB
 
+### SMB
+```
+enum4linux Target_IP
+```
+```
+smbmap -H Target_IP
+```
+```
+smbclient ////Target_IP//Shares_name
+```
+
+### SMTP
+Verify SMTP Port using netcat
+```
+nc -nv Target_IP 25
+```
+
+### POP3 Enumeration
+```
+root@kali:~# telnet $ip 110
++OK beta POP3 server (JAMES POP3 Server 2.3.2) ready
+USER billydean    
++OK
+PASS password
++OK Welcome billydean
+
+list
+
++OK 2 1807
+1 786
+2 1021
+
+retr 1
+
++OK Message follows
+From: jamesbrown@motown.com
+Dear Billy Dean,
+
+Here is your login for remote desktop ... try not to forget it this time!
+username: billydean
+password: PA$$W0RD!Z
+```
+
+### HTTP Enumeration
+- Common Sensitive Directory
+|/admin|/dashboard|/phpMyAdmin|
+|----|----|----|
+|/adm|/cpanel|/manage|
+|/4dm1n|/root|/pma |
+/login| /cms| dan lainnya|
+
+- Wordlists
+
+- Dirb
+
+- Nikto
+
+- WPScan
 
 
 ### Search For Public Exploit
-Exploit-DB, Google, Github
+Google Search, Github, Exploit-DB
 
 Searchsploit
 ```
-searchsploit `exploit keyword` \\Mencari exploit dengan keyword tertentu
-
-
+searchsploit linux 2.2.0
 ```
+> Mencari exploit dengan keyword tertentu contoh linux 2.2.0
