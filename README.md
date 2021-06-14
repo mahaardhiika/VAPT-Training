@@ -42,7 +42,7 @@ ls /usr/share/nmap/scripts
 | 25 | SMTP - Email sending service. [Query it](#SMTP-Email-Enumeration) to enum email addresses? |
 | 69 | TFTP Server.  Very uncommon and old. Uses UDP. |
 | 80 | HTTP Server, hosting website? Try visiting IP with web browser |
-| 88 | Kerboros Service.  Check, [MS14-068](https://labs.f-secure.com/archive/digging-into-ms14-068-exploitation-and-defence/) |
+| 88 | Kerberos Service.  Check, [MS14-068](https://labs.f-secure.com/archive/digging-into-ms14-068-exploitation-and-defence/) |
 | 110 | POP3 mail service.  Login via telnet or SSH? |
 | 111 | RPCbind. This can help us look for NFS-shares |
 | 119 | Network Time Protocol |
@@ -61,11 +61,22 @@ ls /usr/share/nmap/scripts
 | 3306 | MySQL Database.  Connect: `mysql --host=10.1.11.69 -u root -p`|
 | 3389 | Listening for RDP connection |
 
-## Enmueration
+## Enumeration
 ### FTP
 Check for Anonymous login allowed
 ```
-ftp `Target IP`
-<username : anonymous>
-<password :>  //Masukkan sembarang password
+ftp open `Target IP` \\ Username: anonymous ; password sembarang 
+```
+### SMB
+
+
+
+### Search For Public Exploit
+Exploit-DB, Google, Github
+
+Searchsploit
+```
+searchsploit `exploit keyword` \\Mencari exploit dengan keyword tertentu
+
+
 ```
