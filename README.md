@@ -70,14 +70,14 @@ ftp open Target_IP
 > Username: anonymous ; password sembarang
 
 ### SMB
+Connect ke SMB untuk mengecek Shares yang available
 ```
-enum4linux Target_IP
+smbclient -L Target_IP
 ```
+
+Connect ke salah satu shares
 ```
-smbmap -H Target_IP
-```
-```
-smbclient ////Target_IP//Shares_name
+smbclient //Target_IP/Shares_name
 ```
 
 ### SMTP
