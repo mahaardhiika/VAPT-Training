@@ -133,8 +133,10 @@ Scanning web menggunakna nikto
 ```
 nikto -H http://<ip_target>
 ```
-- WPScan
-
+- WPScan (Wordpress Scanner)
+```
+wpscan --url http://target.com 
+```
 
 ### Search For Public Exploit
 Google Search, Github, Exploit-DB
