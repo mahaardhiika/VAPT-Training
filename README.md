@@ -68,6 +68,10 @@ Check for Anonymous login allowed
 ftp open Target_IP
 ```
 > Username: anonymous ; password sembarang
+Download file from ftp
+```
+GET <nama file>
+```
 
 ### SMB
 Connect ke SMB untuk mengecek Shares yang available
@@ -125,7 +129,10 @@ password: PA$$W0RD!Z
 - Dirb
 
 - Nikto
-
+Scanning web menggunakna nikto 
+```
+nikto -H http://<ip_target>
+```
 - WPScan
 
 
