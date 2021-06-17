@@ -70,7 +70,7 @@ ftp open Target_IP
 > Username: anonymous ; password sembarang
 Download file from ftp
 ```
-GET <nama file>
+get <nama file>
 ```
 
 ### SMB
@@ -129,7 +129,7 @@ password: PA$$W0RD!Z
 - Dirb
 
 - Nikto
-Scanning web menggunakna nikto 
+Scanning web menggunakna nikto
 ```
 nikto -H http://<ip_target>
 ```
