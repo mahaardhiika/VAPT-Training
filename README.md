@@ -62,6 +62,12 @@ ls /usr/share/nmap/scripts
 | 3389 | Listening for RDP connection |
 
 ## Enumeration
+
+### SSh
+Connect to ssh : ssh username@ip
+```
+ssh kali@10.131.2.128 
+```
 ### FTP
 Check for Anonymous login allowed
 ```
@@ -135,7 +141,7 @@ nikto -H http://<ip_target>
 ```
 - WPScan (Wordpress Scanner)
 ```
-wpscan --url http://target.com 
+wpscan --url http://target.com
 ```
 
 ### Search For Public Exploit
