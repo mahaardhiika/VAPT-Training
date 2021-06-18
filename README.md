@@ -66,7 +66,7 @@ ls /usr/share/nmap/scripts
 ### SSh
 Connect to ssh : ssh username@ip
 ```
-ssh kali@10.131.2.128 
+ssh kali@10.131.2.128
 ```
 ### FTP
 Check for Anonymous login allowed
@@ -74,6 +74,7 @@ Check for Anonymous login allowed
 ftp open Target_IP
 ```
 > Username: anonymous ; password sembarang
+
 Download file from ftp
 ```
 get <nama file>
