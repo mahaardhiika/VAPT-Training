@@ -5,17 +5,20 @@ This Repository is intended to support VAPT Course. All cheats we need in the co
 ## Linux Basic
 ### Whoami
 Print active User ID  
-```Whoami
+```
+Whoami
 ```
 
 ### pwd  
 Print Working directory
-```pwd
+```
+pwd
 ```
 
 ### mkdir
 Make Directory
-```mkdir pentest
+```
+mkdir pentest
 ```
 
 ### cd
