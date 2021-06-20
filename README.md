@@ -17,11 +17,12 @@ Make Directory
 
 ### cd
 Change directory
-> cd pentest // Change directory to pentest (Inside Working Directory)
+```
+cd pentest // Change directory to pentest (Inside Working Directory)
 cd /var // change directory to var (Outside Working Directory)
 cd //Back to home Directory
 cd .. // Directory Up
-
+```
 ### ls
 List files in working Directory
 > ls
