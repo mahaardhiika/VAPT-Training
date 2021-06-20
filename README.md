@@ -34,7 +34,7 @@ Locate executable file full path
 ### man
 Manual Page of a Command
 > man which // Manual page of which Command
-man -k "change password" // Search for command to change password
+> man -k "change password" // Search for command to change password
 
 ### locate
 Find / Search for files
