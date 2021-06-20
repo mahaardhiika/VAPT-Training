@@ -5,15 +5,18 @@ This Repository is intended to support VAPT Course. All cheats we need in the co
 ## Linux Basic
 ### Whoami
 Print active User ID  
-> Whoami
+```Whoami
+```
 
 ### pwd  
 Print Working directory
-> pwd
+```pwd
+```
 
 ### mkdir
 Make Directory
-> mkdir pentest
+```mkdir pentest
+```
 
 ### cd
 Change directory
@@ -25,106 +28,146 @@ cd .. // Directory Up
 ```
 ### ls
 List files in working Directory
-> ls
+```
+ls
 ls -la // Print out all files including hidden files
+```
 
 ### which
 Locate executable file full path
-> which nmap // Locate the full path of nmap  
+```
+which nmap // Locate the full path of nmap  
+```
 
 ### man
 Manual Page of a Command
-> man which // Manual page of which Command
-> man -k "change password" // Search for command to change password
+```
+man which // Manual page of which Command
+man -k "change password" // Search for command to change password
+```
 
 ### locate
 Find / Search for files
-> locate -i passwd // Find for passwd files with case-Insensitive
+```
+locate -i passwd // Find for passwd files with case-Insensitive
+```
 
 ### wget
 Download a file
-> wget http://<IP>:<Port>/access_log.txt
+```
+wget http://<IP>:<Port>/access_log.txt
+```
 
 ### cat
 Concatenate / print contents of a files
-> cat access_log.txt
+```
+cat access_log.txt
+```
 
 ### head
 Cat only first 10 lines of a file
-> head access_log.txt
+```
+head access_log.txt
+```
 
 ### tail
 Cat only last 10 lines of a file
-> less access_log.txt
+```
+less access_log.txt
+```
 
 ### cp
 Copy file
-> cp access_log.txt access_log.txt.backup
+```
+cp access_log.txt access_log.txt.backup
+```
 
 ### mv
 Rename or cut a file
-> mv access_log.txt exercise.txt
+```
+mv access_log.txt exercise.txt
+```
 
 ### grep
 Search for specific word in a file  
-> grep admin exercise.txt
+```
+grep admin exercise.txt
+```
 
 ### wc
 Count lines, words, bytes, of a files
-> wc exercise.txt
+```
+wc exercise.txt
+```
 
 ### sort
 Sort files
-> sort -u exercise.txt // Sort unique lines on exercise.txt
+```
+sort -u exercise.txt // Sort unique lines on exercise.txt
+```
 
 ### tab completion
 Automatically fill the command/files names we write
-> cat ex<TAB> // will show exercise.txt
+```
+cat ex<TAB> // will show exercise.txt
+```
 
 ### history
 Check history of command we input
-> history
+```
+history
+```
 
 ### sudo
 Super User do!
-> cat /etc/shadow // It will prompt Access Denied
+```
+cat /etc/shadow // It will prompt Access Denied
 ls -la /etc/shadow // Check permission of /etc/shadow file
 whoami
 sudo -l // Check our sudo privilege
 sudo /etc/shadow
 cat /etc/shadow
 sudo !! // Sudo above command
+```
 
 ### su
 switch user
-> su kali // Switch to kali
+```
+su kali // Switch to kali
 sudo su // Switch to root
-
+```
 
 ### CTF Part 1.1
 
 ### Piping & Redirection
 Piping ( | ) is a command that let you use two or more commands such that output of one command serves as input to the next command.
-> cat exercise.txt // Will show all lines of exercises.txt
+```
+cat exercise.txt // Will show all lines of exercises.txt
 cat exercise.txt | grep admin // will only show line contain admin
 cat exercise.txt | grep admin | wc -c // Count bytes of above output
+```
 
 Redirection  is change the output of command to a files
-> cat exercise.txt | grep admin > admin_exercise.txt
+```
+cat exercise.txt | grep admin > admin_exercise.txt
 echo "This will overwrite" > admin_exercise.txt | Overwrite exercise.txt with "This will overwrite", or make exercise.txt file if it is not exists
 echo "This will not overwrite" >> admin_exercise.txt | write "This will not overwrite" to the last line of exercise.txt
-
+```
 ### Latihan 1
 Bacalah file /etc/passwd , kemudian ambil line yang mengandung /bin/bash, jadikan ke dalam sebuah file bernama user.txt !
 
 ### cut
 Cutting out some section of a file
-> cat user.txt | cut -d ":" -f 1 //Menampilkan hanya colomn 1
+```
+cat user.txt | cut -d ":" -f 1 //Menampilkan hanya colomn 1
+```
 
 ### awk
 More powerful than Cut
-> cat user.txt | awk -F ":" '{print $1 $2}'
-awk -F ":" '{print "Terdapat user bernama " $1}'
+```
+cat user.txt | awk -F ":" '{print $1 $2}'
+cut user.txt | awk -F ":" '{print "Terdapat user bernama " $1}'
+```
 
 ### CTF Part 1.2
 
