@@ -80,6 +80,25 @@ Sort files
 Automatically fill the command/files names we write
 > cat ex<TAB> // will show exercise.txt
 
+### history
+Check history of command we input
+> history
+
+### sudo
+Super User do!
+> cat /etc/shadow // It will prompt Access Denied
+ls -la /etc/shadow // Check permission of /etc/shadow file
+whoami
+sudo -l // Check our sudo privilege
+sudo /etc/shadow
+cat /etc/shadow
+sudo !! // Sudo above command
+
+### su
+switch user
+> su kali // Switch to kali
+sudo su // Switch to root
+
 
 ### CTF Part 1.1
 
