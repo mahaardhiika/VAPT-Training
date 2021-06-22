@@ -186,6 +186,7 @@ cut user.txt | awk -F ":" '{print "Terdapat user bernama " $1}'
 |5| -sV | Check Version of running service |
 |6| -sC | Scan with default safe Scripts |
 |7| -O | OS Fingerprinting |
+|8| 
 
 | # | Command | Scan For |
 | --- | --- | --- |
