@@ -186,7 +186,7 @@ cut user.txt | awk -F ":" '{print "Terdapat user bernama " $1}'
 |5| -sV | Check Version of running service |
 |6| -sC | Scan with default safe Scripts |
 |7| -O | OS Fingerprinting |
-|8| 
+|8|
 
 | # | Command | Scan For |
 | --- | --- | --- |
@@ -236,6 +236,12 @@ Connect to ssh : ssh username@ip
 ```
 ssh kali@10.131.2.128
 ```
+
+### Brute Force SSH
+```
+hydra -L users_file -P password_files ssh://10.0.0.27:22
+```
+
 ### FTP
 Check for Anonymous login allowed
 ```
@@ -257,6 +263,11 @@ smbclient -L Target_IP
 Connect ke salah satu shares
 ```
 smbclient //Target_IP/Shares_name
+```
+Download file di SMB
+```
+get <nama file>
+exit
 ```
 
 ### SMTP
