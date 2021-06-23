@@ -34,7 +34,7 @@ cd .. // Directory Up
 List files in working Directory
 ```
 ls
-ls -la // Print out all files including hidden files
+ls -la // Print out all files including hidden file
 ```
 
 ### which
