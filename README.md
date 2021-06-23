@@ -259,6 +259,7 @@ get <nama file>
 Connect ke SMB untuk mengecek Shares yang available
 ```
 smbclient -L Target_IP
+<Masukkan password bebas>
 ```
 
 Connect ke salah satu shares
