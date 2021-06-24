@@ -319,7 +319,7 @@ password: PA$$W0RD!Z
 - Nikto
 Scanning web menggunakna nikto
 ```
-nikto -H http://<ip_target>
+nikto -h http://<ip_target>
 ```
 - WPScan (Wordpress Scanner)
 ```
