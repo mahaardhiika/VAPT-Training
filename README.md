@@ -21,6 +21,12 @@ Make Directory
 ```
 mkdir pentest
 ```
+### ls
+List files in working Directory
+```
+ls
+ls -la // Print out all files including hidden file
+```
 
 ### cd
 Change directory
@@ -29,12 +35,6 @@ cd pentest // Change directory to pentest (Inside Working Directory)
 cd /var // change directory to var (Outside Working Directory)
 cd //Back to home Directory
 cd .. // Directory Up
-```
-### ls
-List files in working Directory
-```
-ls
-ls -la // Print out all files including hidden file
 ```
 
 ### which
@@ -60,6 +60,12 @@ locate -i passwd // Find for passwd files with case-Insensitive
 Download a file
 ```
 wget http://<IP>:<Port>/access_log.txt
+```
+
+### Menambahkan hostname di /etc/hosts
+```
+sudo nano /etc/hosts
+tambahkan : vapt.mantap   104.198.70.58
 ```
 
 ### cat
@@ -103,11 +109,11 @@ Count lines, words, bytes, of a files
 ```
 wc exercise.txt
 ```
-
-### sort
-Sort files
+### CTF 1.0
 ```
-sort -u exercise.txt // Sort unique lines on exercise.txt
+berapakah jumlah ukuran file exercise.txt ? ls
+
+Berapakah jumlah kata dari file exercise.txt
 ```
 
 ### tab completion
