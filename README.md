@@ -59,8 +59,9 @@ locate -i passwd // Find for passwd files with case-Insensitive
 ### wget
 Download a file
 ```
-wget http://<IP>:<Port>/access_log.txt
+wget http://104.198.70.58:8000/access_log.txt
 ```
+Untuk memudahkan, maka kita tambahkan hostname pada /etc/hosts
 
 ### Menambahkan hostname di /etc/hosts
 ```
@@ -110,11 +111,10 @@ Count lines, words, bytes, of a files
 wc exercise.txt
 ```
 ### CTF 1.0
-```
-berapakah jumlah ukuran file exercise.txt ? ls
 
-Berapakah jumlah kata dari file exercise.txt
-```
+> berapakah jumlah ukuran file exercise.txt ? ls
+
+> Berapakah jumlah kata dari file exercise.txt
 
 ### tab completion
 Automatically fill the command/files names we write
@@ -140,11 +140,25 @@ cat /etc/shadow
 sudo !! // Sudo above command
 ```
 
+### Adduser
+```
+sudo useradd -m vapt // Membuat user vapt
+
+sudo passwd vapt // Membuat password vapt = 'vapt'
+
+sudo userdel vapt // Menghapus user vapt
+```
+
 ### su
 switch user
 ```
-su kali // Switch to kali
+su vapt // Switch to kali
 sudo su // Switch to root
+```
+
+### Add to Sudoers
+```
+sudo usermod -aG sudo <username>
 ```
 
 ### CTF Part 1.1
