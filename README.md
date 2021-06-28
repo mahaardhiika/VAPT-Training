@@ -266,7 +266,7 @@ hydra -L users_file -P password_files ssh://10.0.0.27:22
 ### FTP
 Check for Anonymous login allowed
 ```
-ftp open Target_IP
+ftp Target_IP
 ```
 > Username: anonymous ; password sembarang
 
@@ -364,7 +364,6 @@ Download File
 ```
 wget Alamat_URL
 ```
-
 
 ### Reverse shell
 Membuat Listener Pada Machine Attacker (Kali), contoh untuk port 4444
